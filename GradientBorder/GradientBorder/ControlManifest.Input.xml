@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-    <control namespace="RyanAgatep" constructor="GradientBorder" version="1.0.0" display-name-key="Custom Border Animation" description-key="Custom Border Animation" control-type="standard">
+    <control namespace="RyanAgatep" constructor="GradientBorder" version="1.0.1" display-name-key="Custom Border Animation" description-key="Custom Border Animation" control-type="standard">
     
     <property name="sampleText" display-name-key="Content (Unused)" description-key="Placeholder" of-type="SingleLine.Text" usage="bound" required="false" />
 
     <property name="startColor" display-name-key="Start Color" description-key="Hex color code (e.g., #2d3561)" of-type="SingleLine.Text" usage="input" required="true" default-value="#2d3561"/>
+
     <property name="endColor" display-name-key="End Color" description-key="Hex color code (e.g., #c05c7e)" of-type="SingleLine.Text" usage="input" required="true" default-value="#c05c7e"/>
 
-    <property name="animDuration" display-name-key="Animation Speed (s)" description-key="Duration in seconds" of-type="Whole.None" usage="input" required="true" default-value="5"/>
+    <property name="animDuration" display-name-key="Animation Duration (Sec)" description-key="Duration in seconds (e.g. 0.5, 1.5)" of-type="Decimal" usage="input" required="true" default-value="5.0"/>
 
     <property name="animIterationCount" display-name-key="Animation Iterations" description-key="Number of loops (0 for infinite)" of-type="Whole.None" usage="input" required="true" default-value="5"/>
 

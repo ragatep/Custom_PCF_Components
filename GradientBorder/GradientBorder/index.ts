@@ -1,4 +1,4 @@
-import {IInputs, IOutputs} from "./generated/ManifestTypes";
+import { IInputs, IOutputs } from "./generated/ManifestTypes";
 
 export class GradientBorder implements ComponentFramework.StandardControl<IInputs, IOutputs> {
 
@@ -7,16 +7,16 @@ export class GradientBorder implements ComponentFramework.StandardControl<IInput
     private height = 100;
 
     // eslint-disable-next-line @typescript-eslint/no-empty-function
-    constructor() {}
+    constructor() { }
 
     public init(context: ComponentFramework.Context<IInputs>, notifyOutputChanged: () => void, state: ComponentFramework.Dictionary, container: HTMLDivElement): void {
         this.container = container;
         this.container.style.position = "relative";
-        this.container.style.overflow = "hidden"; 
+        this.container.style.overflow = "hidden";
     }
 
     public updateView(context: ComponentFramework.Context<IInputs>): void {
-        
+
         // 1. GET DIMENSIONS & FORCE SIZE
         this.width = context.mode.allocatedWidth;
         this.height = context.mode.allocatedHeight;
@@ -42,27 +42,21 @@ export class GradientBorder implements ComponentFramework.StandardControl<IInput
         const radius = context.parameters.borderRadius.raw || 15;
         const strokeWidth = context.parameters.strokeWidth.raw || 10;
         const opacityVal = context.parameters.borderOpacity.raw || 100;
-        
-        // Logic: If input is 0 or null, use 'infinite'. Otherwise use the number.
+
         const iterInput = context.parameters.animIterationCount.raw;
         const iterationCount = (iterInput === null || iterInput <= 0) ? "infinite" : iterInput.toString();
 
         const opacity = opacityVal / 100;
 
-        // 3. DEBUG LOGGING (Commented out for Production)
-        /*
-        console.log("🎨 UpdateView Triggered!");
-        console.log(`Dimensions: ${this.width} x ${this.height}`);
-        console.log(`Loops: ${iterationCount}`);
-        */
-
-        // 4. CALCULATE GEOMETRY
+        // 3. CALCULATE GEOMETRY
         const offset = strokeWidth / 2;
         const rectW = Math.max(0, this.width - strokeWidth);
         const rectH = Math.max(0, this.height - strokeWidth);
         const perimeter = (2 * rectW) + (2 * rectH);
 
-        // 5. GENERATE SVG
+        // 4. GENERATE SVG
+        // CHANGE 1: We changed the keyframe to animate to '0' instead of 'perimeter * 2'.
+        // This reverses the flow to be CLOCKWISE.
         const svgHTML = `
             <svg width="${this.width}" height="${this.height}" viewBox="0 0 ${this.width} ${this.height}" xmlns="http://www.w3.org/2000/svg" style="position:absolute; top:0; left:0;">
                 
@@ -80,7 +74,7 @@ export class GradientBorder implements ComponentFramework.StandardControl<IInput
                             opacity: ${opacity};
                         }
                         @keyframes strokeAnim {
-                            to { stroke-dashoffset: ${perimeter * 2}; }
+                            to { stroke-dashoffset: 0; } 
                         }
                     </style>
                 </defs>
