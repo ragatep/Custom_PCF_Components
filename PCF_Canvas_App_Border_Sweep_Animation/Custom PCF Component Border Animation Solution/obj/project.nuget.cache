@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "9GbMYYrKUt4=",
+  "success": true,
+  "projectFilePath": "E:\\joffet\\Documents\\GitHubRepo\\Custom_PCF_Components\\PCF_Canvas_App_Border_Sweep_Animation\\Custom PCF Component Border Animation Solution\\Custom PCF Component Border Animation Solution.cdsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\joffet\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.0\\microsoft.netframework.referenceassemblies.1.0.0.nupkg.sha512",
+    "C:\\Users\\joffet\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net462\\1.0.0\\microsoft.netframework.referenceassemblies.net462.1.0.0.nupkg.sha512",
+    "C:\\Users\\joffet\\.nuget\\packages\\microsoft.powerapps.msbuild.pcf\\1.52.1\\microsoft.powerapps.msbuild.pcf.1.52.1.nupkg.sha512",
+    "C:\\Users\\joffet\\.nuget\\packages\\microsoft.powerapps.msbuild.solution\\1.52.1\\microsoft.powerapps.msbuild.solution.1.52.1.nupkg.sha512"
+  ],
+  "logs": []
+}

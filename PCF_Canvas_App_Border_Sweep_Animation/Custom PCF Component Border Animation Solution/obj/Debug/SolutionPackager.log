@@ -1,0 +1,20 @@
+2026-01-10 07:53:03.475 - Info	
+Packing E:\joffet\Documents\GitHubRepo\Custom_PCF_Components\PCF_Canvas_App_Border_Sweep_Animation\Custom PCF Component Border Animation Solution\obj\Debug\Metadata to bin\Debug\Custom PCF Component Border Animation Solution.zip
+
+2026-01-10 07:53:03.499 - Info	Processing Component: Entities
+2026-01-10 07:53:03.503 - Info	Processing Component: Roles
+2026-01-10 07:53:03.508 - Info	Processing Component: Workflows
+2026-01-10 07:53:03.508 - Info	Processing Component: FieldSecurityProfiles
+2026-01-10 07:53:03.508 - Info	Processing Component: Templates
+2026-01-10 07:53:03.509 - Info	Processing Component: EntityMaps
+2026-01-10 07:53:03.509 - Info	Processing Component: EntityRelationships
+2026-01-10 07:53:03.512 - Info	Processing Component: OrganizationSettings
+2026-01-10 07:53:03.512 - Info	Processing Component: optionsets
+2026-01-10 07:53:03.512 - Info	Processing Component: CustomControls
+2026-01-10 07:53:03.522 - Info	 - rcaCustomPCFComponentBorderAnimation.rcaCustomPCFComponentBorderAnimation
+2026-01-10 07:53:03.526 - Info	Processing Component: SolutionPluginAssemblies
+2026-01-10 07:53:03.528 - Info	Processing Component: EntityDataProviders
+2026-01-10 07:53:03.538 - Info	Processing Sharded Component Files
+2026-01-10 07:53:03.595 - Info	
+Unmanaged Pack complete.
+

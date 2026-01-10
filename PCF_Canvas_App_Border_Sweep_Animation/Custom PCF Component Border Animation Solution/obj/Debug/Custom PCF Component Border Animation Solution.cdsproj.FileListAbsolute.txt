@@ -1,0 +1,2 @@
+E:\joffet\Documents\GitHubRepo\Custom_PCF_Components\PCF_Canvas_App_Border_Sweep_Animation\Custom PCF Component Border Animation Solution\obj\Debug\Custom PCF Component Border Animation Solution.cdsproj.AssemblyReference.cache
+E:\joffet\Documents\GitHubRepo\Custom_PCF_Components\PCF_Canvas_App_Border_Sweep_Animation\Custom PCF Component Border Animation Solution\obj\Debug\Custom PCF Component Border Animation Solution.cdsproj.CoreCompileInputs.cache

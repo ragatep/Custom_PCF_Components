@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="CustomPCFComponentBorderAnimation" constructor="CustomPCFComponentBorderAnimation" version="0.0.1" display-name-key="Border_Animation_Display" description-key="Border_Animation_Description" control-type="standard" >
+    <external-service-usage enabled="false">
+    </external-service-usage>
+    <!-- property node identifies a specific, configurable piece of data that the control expects -->
+    <property name="StartColor" display-name-key="Start_Color_Display" description-key="Start_Color_Description" of-type="SingleLine.Text" usage="input" required="false" pfx-default-value="#2d3561" />
+    <property name="EndColor" display-name-key="End_Color_Display" description-key="End_Color_Description" of-type="SingleLine.Text" usage="input" required="false" pfx-default-value="#ffb961" />
+    <property name="AnimationSpeed" display-name-key="Animation_Speed_Display" description-key="Animation_Speed_Description" of-type="Decimal" usage="input" required="false" pfx-default-value="5" />
+    <property name="BorderRadius" display-name-key="Border_Radius_Display" description-key="Border_Radius_Description" of-type="Whole.None" usage="input" required="false" pfx-default-value="0" />
+    <property name="Opacity" display-name-key="Opacity_Display" description-key="Opacity_Description" of-type="Decimal" usage="input" required="false" pfx-default-value="1.0" />
+    <resources>
+      <code path="index.ts" order="1"/>
+      <css path="css/BorderAnimation.css" order="1" />
+    </resources>
+  </control>
+</manifest>

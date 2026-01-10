@@ -1,0 +1,53 @@
+/* Scoped CSS for Border Animation Component */
+/* All styles are scoped using the component namespace to avoid conflicts with host app */
+
+.CustomPCFComponentBorderAnimation\.CustomPCFComponentBorderAnimation {
+    /* Container styles */
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+}
+
+.CustomPCFComponentBorderAnimation\.CustomPCFComponentBorderAnimation .border-animation-container {
+    /* Border container fills the available space */
+    width: 100%;
+    height: 100%;
+    min-width: 50px;
+    min-height: 50px;
+    box-sizing: border-box;
+    position: relative;
+    
+    /* Ensure the container can display content if needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* Smooth transitions for property changes */
+    transition: border-radius 0.2s ease-in-out;
+    
+    /* Ensure border is visible even on empty container */
+    background-color: transparent;
+}
+
+/* Ensure border-image is applied correctly */
+.CustomPCFComponentBorderAnimation\.CustomPCFComponentBorderAnimation .border-animation-container[style*="border-image"] {
+    /* Additional styles if needed for border-image compatibility */
+}
+
+/* Support for border-radius with border-image using mask (hybrid approach) */
+/* The mask approach is applied inline via TypeScript when border-radius > 0 */
+/* This CSS provides fallback support and ensures proper rendering */
+
+/* Ensure content area respects border-radius when mask is applied */
+.CustomPCFComponentBorderAnimation\.CustomPCFComponentBorderAnimation .border-animation-container[style*="mask"] {
+    padding: 0;
+}
+
+/* Responsive container support */
+@media (max-width: 768px) {
+    .CustomPCFComponentBorderAnimation\.CustomPCFComponentBorderAnimation .border-animation-container {
+        min-width: 40px;
+        min-height: 40px;
+    }
+}
