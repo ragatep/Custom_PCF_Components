@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-    <control namespace="RyanAgatep" constructor="GradientBorder" version="1.0.1" display-name-key="Custom Border Animation" description-key="Custom Border Animation" control-type="standard">
+    <control namespace="RyanAgatep" constructor="GradientBorder" version="1.0.2" display-name-key="Custom Border Animation" description-key="Custom Border Animation" control-type="standard">
     
     <property name="sampleText" display-name-key="Content (Unused)" description-key="Placeholder" of-type="SingleLine.Text" usage="bound" required="false" />
 

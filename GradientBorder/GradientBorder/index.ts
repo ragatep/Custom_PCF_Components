@@ -34,6 +34,7 @@ export class GradientBorder implements ComponentFramework.StandardControl<IInput
 
         this.container.style.width = `${this.width}px`;
         this.container.style.height = `${this.height}px`;
+        this.container.style.pointerEvents = "none"; 
 
         // 2. GET PROPERTIES
         const startColor = context.parameters.startColor.raw || "#2d3561";

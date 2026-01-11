@@ -1,1 +1,4 @@
-/* Placeholder for build requirement */
+/* Add this to your main container class */
+.gradient-border-container {
+    pointer-events: none; /* This allows clicks to pass through! */
+}
