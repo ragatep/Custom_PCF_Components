@@ -1,7 +1,7 @@
 /* Scoped CSS for Border Animation Component */
 /* All styles are scoped using the component namespace to avoid conflicts with host app */
 
-.CustomPCFComponentBorderAnimation\.CustomPCFComponentBorderAnimation {
+.RyanAgatep\.GradientBorder {
     /* Container styles */
     width: 100%;
     height: 100%;
@@ -9,7 +9,7 @@
     position: relative;
 }
 
-.CustomPCFComponentBorderAnimation\.CustomPCFComponentBorderAnimation .border-animation-container {
+.RyanAgatep\.GradientBorder .border-animation-container {
     /* Border container fills the available space */
     width: 100%;
     height: 100%;
@@ -31,7 +31,7 @@
 }
 
 /* Ensure border-image is applied correctly */
-.CustomPCFComponentBorderAnimation\.CustomPCFComponentBorderAnimation .border-animation-container[style*="border-image"] {
+.RyanAgatep\.GradientBorder .border-animation-container[style*="border-image"] {
     /* Additional styles if needed for border-image compatibility */
 }
 
@@ -40,13 +40,13 @@
 /* This CSS provides fallback support and ensures proper rendering */
 
 /* Ensure content area respects border-radius when mask is applied */
-.CustomPCFComponentBorderAnimation\.CustomPCFComponentBorderAnimation .border-animation-container[style*="mask"] {
+.RyanAgatep\.GradientBorder .border-animation-container[style*="mask"] {
     padding: 0;
 }
 
 /* Responsive container support */
 @media (max-width: 768px) {
-    .CustomPCFComponentBorderAnimation\.CustomPCFComponentBorderAnimation .border-animation-container {
+    .RyanAgatep\.GradientBorder .border-animation-container {
         min-width: 40px;
         min-height: 40px;
     }

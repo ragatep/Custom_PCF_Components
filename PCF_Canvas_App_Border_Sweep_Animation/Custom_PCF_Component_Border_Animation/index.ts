@@ -1,6 +1,6 @@
 import { IInputs, IOutputs } from "./generated/ManifestTypes";
 
-export class CustomPCFComponentBorderAnimation implements ComponentFramework.StandardControl<IInputs, IOutputs> {
+export class GradientBorder implements ComponentFramework.StandardControl<IInputs, IOutputs> {
     private _container: HTMLDivElement;
     private _borderContainer: HTMLDivElement;
     private _notifyOutputChanged: () => void;

@@ -8,6 +8,9 @@
 		},
 		{
 			"path": "../powerapps-docs"
+		},
+		{
+			"path": "../power-platform"
 		}
 	],
 	"settings": {}

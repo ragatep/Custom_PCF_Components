@@ -58,6 +58,24 @@ if (fs.existsSync(cssSource)) {
     // Copy css directory recursively
     fs.cpSync(cssSource, cssDest, { recursive: true });
     console.log(`Copied css/ directory to ${componentDirName}/css/`);
+
+    // Remove root-level css so solution packager sees only the control subdirectory
+    // (packager treats each subdir of out/controls as a control and expects ControlManifest.xml)
+    fs.rmSync(cssSource, { recursive: true, force: true });
+    console.log('Removed root-level css/ so packager only sees control folder.');
+}
+
+// Copy strings directory to component subdirectory (resx for display name), then remove from root
+const stringsSource = path.join(outputDir, 'strings');
+const stringsDest = path.join(componentDir, 'strings');
+if (fs.existsSync(stringsSource)) {
+    if (fs.existsSync(stringsDest)) {
+        fs.rmSync(stringsDest, { recursive: true, force: true });
+    }
+    fs.cpSync(stringsSource, stringsDest, { recursive: true });
+    console.log(`Copied strings/ directory to ${componentDirName}/strings/`);
+    fs.rmSync(stringsSource, { recursive: true, force: true });
+    console.log('Removed root-level strings/ so packager only sees control folder.');
 }
 
 // IMPORTANT: When running 'npm run start' from WITHIN a component directory,

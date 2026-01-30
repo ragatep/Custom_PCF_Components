@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="CustomPCFComponentBorderAnimation" constructor="CustomPCFComponentBorderAnimation" version="0.0.1" display-name-key="Border_Animation_Display" description-key="Border_Animation_Description" control-type="standard" >
+  <control namespace="RyanAgatep" constructor="GradientBorder" version="0.0.1" display-name-key="Border_Animation_Display" description-key="Border_Animation_Description" control-type="standard" >
     <external-service-usage enabled="false">
     </external-service-usage>
     <!-- property node identifies a specific, configurable piece of data that the control expects -->
@@ -12,6 +12,7 @@
     <resources>
       <code path="index.ts" order="1"/>
       <css path="css/BorderAnimation.css" order="1" />
+      <resx path="strings/GradientBorder.1033.resx" version="1.0.0" />
     </resources>
   </control>
 </manifest>
