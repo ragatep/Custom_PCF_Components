@@ -40,7 +40,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Custom_Confetti" xml:space="preserve">
-    <value>scdoit_RyanAgatep.Confetti</value>
+  
+  <data name="Confetti_Display_Key" xml:space="preserve">
+    <value>Custom Confetti Animation</value>
+  </data>
+  <data name="Confetti_Desc_Key" xml:space="preserve">
+    <value>A custom confetti celebration animation.</value>
+  </data>
+  <data name="Confetti_Spread" xml:space="preserve">
+    <value>Spread Angle</value>
+  </data>
+  <data name="Confetti_Spread_Desc" xml:space="preserve">
+    <value>How wide the confetti spreads (in degrees).</value>
+  </data>
+  <data name="Delay_Seconds" xml:space="preserve">
+    <value>Delay (Seconds)</value>
+  </data>
+  <data name="Delay_Seconds_Desc" xml:space="preserve">
+    <value>Time to wait before firing.</value>
   </data>
 </root>
