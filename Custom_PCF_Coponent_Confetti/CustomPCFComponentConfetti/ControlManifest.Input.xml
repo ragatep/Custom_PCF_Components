@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="RyanAgatep" constructor="Confetti" version="0.0.1" display-name-key="Custom_Confetti" description-key="Custom_Confetti_Description" control-type="standard" >
+    <external-service-usage enabled="false">
+    </external-service-usage>
+    <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
+    <property name="Spread" display-name-key="Confetti_Spread" description-key="How far center the confetti can go." of-type="Whole.None" usage="bound" required="true" />
+    <property name="Delay" display-name-key="Delay_Seconds" description-key="Delay in seconds before confetti deploys" of-type="Decimal" usage="input" required="false" />
+    <resources>
+      <code path="index.ts" order="1"/>
+      <resx path="strings/Confetti.1033.resx" version="1.0.0" />
+    </resources>
+  </control>
+</manifest>

@@ -11,6 +11,7 @@ export class GradientBorder implements ComponentFramework.StandardControl<IInput
 
     public init(context: ComponentFramework.Context<IInputs>, notifyOutputChanged: () => void, state: ComponentFramework.Dictionary, container: HTMLDivElement): void {
         this.container = container;
+        context.mode.trackContainerResize(true);
         this.container.style.position = "relative";
         this.container.style.overflow = "hidden";
     }
@@ -56,8 +57,6 @@ export class GradientBorder implements ComponentFramework.StandardControl<IInput
         const perimeter = (2 * rectW) + (2 * rectH);
 
         // 4. GENERATE SVG
-        // CHANGE 1: We changed the keyframe to animate to '0' instead of 'perimeter * 2'.
-        // This reverses the flow to be CLOCKWISE.
         const svgHTML = `
             <svg width="${this.width}" height="${this.height}" viewBox="0 0 ${this.width} ${this.height}" xmlns="http://www.w3.org/2000/svg" style="position:absolute; top:0; left:0;">
                 
